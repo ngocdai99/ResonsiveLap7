@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Bai2.css">
+
+</head>
+
+<body>
+    <div class="container container-sm container-md container-lg container-xl container-xxl">
+        <div class="row">
+            <div class="top-page">
+                <div class="top-page__left">
+                    <a href="#" class="top-page__link">HELP</a>
+                    <i class="fa-solid fa-phone-volume m-2"></i>0123456789
+                </div>
+
+                <div class="top-page__right">
+                    <a href="#" class="top-page__link">Avatar</a>
+                    <a href="#" class="top-page__link">Sign in</a>
+                    <a href="#" class="top-page__link">Sign up</a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="" class="logo-page">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Bai1.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    New Product
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Product 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Product 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Product 3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Shop 3</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Page 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Page 2</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Page 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">All Pages Links</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Cart
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Bai1.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Category</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+
+            <div style="display: flex; justify-content: space-between;">
+                <h1 style="color: rgb(87, 86, 86)">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </h1>
+                <a href="Bai1.html">
+                    <i class="fa-solid fa-angles-left"></i>
+                    HOME PAGE
+                </a>
+            </div>
+            <section class="main-cart">
+                <table class="table main-cart__left">
+                    <tr>
+                        <th>PRODUCT</th>
+                        <th>DETAILS</th>
+                        <th>REMOVE</th>
+                        <th>QUANTITY</th>
+                        <th>DISCOUNT</th>
+                        <th>TOTAL</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/denim1.jpg" alt="" width="80">
+                        </td>
+                        <td>
+                            <p class="h6">Denim T-Shirt Black</p>
+                            <p>
+                                12x1.5L <br>
+                                <strong>$8.80</strong>
+                            </p>
+
+                            <li class="details__quantity-btns">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <input class="btn btn-outline-secondary " type="submit" value="1"
+                                    style="font-size: 12px;">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                            </li>
+                            <br>
+                            <button class="btn btn-outline-secondary deltails__trash"> <i
+                                    class="fa-solid fa-trash-can "></i></button>
+
+                        </td>
+                        <td><i class="fa-solid  fa-2x fa-trash-can"></i></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <input class="btn btn-outline-secondary" type="submit" value="1" style="font-size: 12px;">
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </td>
+                        <td>-0%</td>
+                        <td><strong>8.80</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/denim2.jpg" alt="" width="80">
+                        </td>
+                        <td>
+                            <p class="h6">Denim T-Shirt Blue</p>
+                            <p>
+                                12x1.5L <br>
+                                <strong>$8.80</strong>
+                            </p>
+
+                            <li class="details__quantity-btns">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <input class="btn btn-outline-secondary " type="submit" value="1"
+                                    style="font-size: 12px;">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+
+                            </li>
+                            <br>
+                            <button class="btn btn-outline-secondary deltails__trash"> <i
+                                    class="fa-solid fa-trash-can "></i></button>
+
+                        </td>
+                        <td><i class="fa-solid  fa-2x fa-trash-can"></i></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <input class="btn btn-outline-secondary" type="submit" value="1" style="font-size: 12px;">
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </td>
+                        <td>-0%</td>
+                        <td><strong>8.80</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="img/denim3.jpg" alt="" width="80">
+                        </td>
+                        <td>
+                            <p class="h6">Denim T-Shirt Brown</p>
+                            <p>
+                                12x1.5L <br>
+                                <strong>$8.80</strong>
+                            </p>
+
+                            <li class="details__quantity-btns">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <input class="btn btn-outline-secondary " type="submit" value="1"
+                                    style="font-size: 12px;">
+                                <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+
+                            </li>
+                            <br>
+                            <button class="btn btn-outline-secondary deltails__trash"> <i
+                                    class="fa-solid fa-trash-can "></i></button>
+
+                        </td>
+                        <td><i class="fa-solid  fa-2x fa-trash-can"></i></td>
+                        <td>
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <input class="btn btn-outline-secondary" type="submit" value="1" style="font-size: 12px;">
+                            <button type="button" class="btn btn-outline-secondary" style="font-size: 12px;">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </td>
+                        <td>-0%</td>
+                        <td><strong>8.80</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <button class="btn btn-outline-secondary">
+                                <a href="Bai1.html" style="color: gray;">
+                                    <i class="fa-solid fa-circle-arrow-left"></i> Back
+                                </a>
+
+                            </button>
+
+                            <button class="btn btn-outline-secondary" style="float: right;">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Update
+                            </button>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <div class="card main-cart__right" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p>Total products</p>
+                            <p><strong>$26.4</strong></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Shipping</p>
+                            <p class="h5" style="color: rgb(73, 128, 0)">Free shipping!</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Total (tax exct.)</p>
+                            <p><strong>$26.4</strong></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Total tax</p>
+                            <p><strong>$26.4</strong></p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <p>Total tax</p>
+                            <p class="h3 text-bg-success"><strong>$26.4</strong></p>
+                        </li>
+                    </ul>
+
+
+                    <form class="d-flex mt-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Coupon code" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Apply</button>
+                    </form>
+
+
+                </div>
+            </section>
+
+            <footer>
+
+                <table class="table table-striped table-responsive table-responsive-sm table-responsive-md">
+                    <tr>
+                        <th class="table__support">SUPPORT</th>
+                        <th class="table__shop">SHOP</th>
+                        <th>INFORMATION</th>
+                        <th>ACCOUNT</th>
+                        <th>CONTACT</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" class="table__support--desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Phone: 0123456789 <br>
+                                Email: help@yourweb.com
+                            </p>
+                        </td>
+                        <td class="table__shop--desc">Men's</td>
+                        <td>Questions</td>
+                        <td>My Account</td>
+                        <td rowspan="6" style="color: gray;">
+                            <input type="email" placeholder="Email" class="p-2" style="width: 100%;"> <br>
+                            <a href="#" class="btn btn-success mt-2"
+                                style="width: 100%; border-radius: 0;">SUBSCRIBE</a>
+                            <br>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" style="color: gray"><i class="fa-brands fa-tiktok"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="table__shop--desc">Women's</td>
+                        <td>Order Status</td>
+                        <td>My Address</td>
+                    </tr>
+
+                    <tr>
+                        <td class="table__shop--desc">Kid's</td>
+                        <td>Sizing Charts</td>
+                        <td>Wish List</td>
+                    </tr>
+
+                    <tr>
+                        <td class="table__shop--desc">SHoes</td>
+                        <td>Return Policy</td>
+                        <td>Order List</td>
+                    </tr>
+                    <tr>
+                        <td class="table__shop--desc">Gift Cards</td>
+                        <td>Contact Us</td>
+                        <td>Order Status</td>
+                    </tr>
+                </table>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="h6">
+                        Lorem Ipsum 2023, All right reserved
+                    </p>
+                    <div>
+                        <img src="img/visa.png" alt="" class="pay">
+                        <img src="img/mastercard.png" alt="" class="pay">
+                        <img src="img/jcb.png" alt="" class="pay">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
